@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ReactDOM from 'react-dom';
+import './index.css';
+import UserTable from './tables/Script1';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const addUser = (user) =>
+    {
+        user.id = user.length + 1
+        setUsers
+    }
+
+    return (
+        <div className="container">
+            <h1>CRUD test</h1>
+            <div className="flex-row">
+                <div className="flex-large">
+                    <h2>Add user</h2>
+                </div>
+                <div className="flex-large">
+                  <h2>View Users</h2>
+                  <UserTable />
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;
