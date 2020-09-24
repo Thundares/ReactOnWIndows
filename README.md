@@ -1,3 +1,8 @@
+# First Project In React
+Trying to build a sample CRUD to feed a database.
+I'll let this generated readme to know the commands.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
